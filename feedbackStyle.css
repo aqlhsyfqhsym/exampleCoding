@@ -1,0 +1,296 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("img_nature.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+
+.container {
+    position: static;
+    width: 50%;
+    top: 20%;
+    margin: auto;
+    margin-left: 25%;
+    padding: 10px;
+    background-color: #E6E6E6;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.form
+{
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: auto;
+    /*padding: 50px 0px;*/
+    box-sizing: border-box;
+    background-color: #0000;
+     
+}
+
+::placeholder {
+     font-family: Andale Mono, monospace;
+    
+}
+
+/*p
+{
+    font-family: Andale Mono, monospace;
+    padding-top: 0%;
+
+}*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    border-radius: 10px;
+    border: 2px solid #575757;
+    padding: 10px; 
+    width: 100%;
+    height: 10%; ;
+    
+    margin: 3px 0 10px 0; 
+    background: #FFFFFF;
+}
+
+/*input[type=radio], input[name=opt]
+{
+    float : left;
+}*/
+
+.radioLeft
+{
+    text-align: left;
+}
+
+.radioLeft input[type=text]
+{
+    width: 25%;
+    height: 10%;
+}
+ 
+select
+{
+    width: 25%;
+    border-radius: 10px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+
+    background-color: #FFFFFF;
+    outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: #696969;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+footer{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+
+ * {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 60%; 
+    padding: 40px;
+    height: 550px;
+   /* height: auto;  Should be removed. Only for demonstration */
+
+}
+
+.column4 {
+    float: left;
+    height: 550px;
+    width: 40%; 
+    padding: 40px;
+    padding-bottom: 44px;
+    /*height: auto;  Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ .column6
+ {
+  height: auto;
+
+ }
+
+.button {
+  width: 200px;
+  height: 40px;
+    background-color: #a29f9f; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button5 {
+    background-color: #ededed;
+    color: black;
+    border: 2px solid #262525;
+}
+
+.button5:hover {
+    background-color: #262525;
+    color: white;
+}
+.header
+{
+  
+  position: static;
+  width: 100%;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ 
+#navbar {
+  background-color: #333;
+  position: static;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.button1 {
+  float: right;
+  width: auto;
+  height: 40px;
+    background-color: #333333; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: FreeMono, monospace;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+   letter-spacing: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button6 {
+    background-color: #333333;
+    color: white;
+    border: 2px solid #ffffff;
+}
+
+.button6:hover {
+    background-color: #ffffff;
+    color: black;
+}

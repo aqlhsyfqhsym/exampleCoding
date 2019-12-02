@@ -1,0 +1,969 @@
+* {box-sizing: border-box}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+}
+
+
+.tablink {
+    background-color: #333333;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+     color: white;
+    font-family: 'Aclonica';font-size:
+}
+
+.tablink:hover {
+    background-color: #484848;
+     
+}
+
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    
+}
+
+
+#Home { background-image: url("wallpaper.png");}
+#Destinations {background-color: #ffffff;}
+#Attraction {background-color: #ffffff;}
+#BuyTicket {background-color: #f5f4f0;}
+
+/*.mySidenav
+{
+  background-image: url("head0.png");
+}*/
+
+.header
+{
+  
+  position: static;
+  width: 100%;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+ 
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}*/
+
+
+/*    .search-container {
+  float: center;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+    .search-container button:hover {
+  background: #ccc;
+}*/
+
+input[type=text1] {
+    width: 100%;
+    height: 7%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text1]:focus {
+    width: 100%;
+}
+ 
+ .container {
+  position: relative;
+  padding-left: auto;
+  padding-top: auto;
+  height: auto;
+  /*background-image: url("b4.png");*/
+ background-repeat: no-repeat;
+}
+
+ 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e8d2ce;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 0%;
+    padding: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  #rig {
+    max-width:80%;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#101010;
+    border-style: double;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:80%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #101010 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+  /*  padding:0 30px;*/
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-family: Chalkduster, fantasy;
+    letter-spacing: 3px;
+    
+    font-size:18px;
+    font-weight:bold;
+    font-weight:normal!important;
+    top:20%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+  .w3-lobster {
+    font-family:"Lobster", serif
+  }
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:25%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+.text-block  {
+   
+   /* bottom: 87px;*/
+    color: black;
+    /*padding:50px;*/
+    width: auto;
+    border-style: dotted;
+    height: auto;
+    padding-right:5%;
+    padding-left: 5%;
+    margin: auto;
+}
+.collapsible {
+    background-color: #2a2a2a;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #7e7e7e;
+}
+/*.slide11
+{
+    background-image: url("b5.png"); 
+background-repeat: no-repeat;
+}*/
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    opacity: 0.9;
+    padding-left: 50px;
+    padding-right: 100px;
+    font-style: oblique;
+    color: black;
+    font-family: Monaco, Monospace;
+
+    /*
+   background-image: url("pastel1.png");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+}
+/*#mySidenav a {
+    position: absolute; 
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 20px;
+    background-color: #d6cec9;
+
+}
+
+#blog {
+    top: 80px;
+    background-color: #b7c5ac;
+}
+
+#travel {
+    top: 140px;
+    background-color: #dbbcb4;
+}
+
+#faq {
+    top: 200px;
+    background-color: #d2d5d4;
+}*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+/* Create three equal columns that floats next to each other */
+.column { 
+  float: left;
+    width: 23.33%;
+    padding: 10px;
+    margin:5px;
+}
+  
+.row
+{
+  padding: 18px;
+    width: 100%;
+    
+  margin: 5px;
+  margin-left: 10px;
+}
+/* Clear floats after the columns */
+.row:after { 
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+.boxed {
+  border: 1px   ;
+  width : 350px;
+  height : 40px;
+  padding :10px;
+  text-shadow: 3px 2px #ffffff;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-variant: small-caps;
+}
+
+.mySlides5 {display:none;}
+
+
+ 
+  
+.context1
+{
+  font-family: Andale Mono, monospace;
+}
+
+.button {
+  width: 200px;
+  height: 40px; 
+  
+    background-color: #a29f9f; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: #ededed;
+    color: black;
+    border: 2px solid #262525;
+}
+
+.button5:hover {
+    background-color: #262525;
+    color: white;
+}
+ 
+
+ .button3 {
+  width: 200px;
+  height: 40px;  
+    background-color: #a29f9f; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+sub
+{
+  color: red;
+}
+
+
+ .button1 {
+  float: right;
+  width: auto;
+  height: 35%;
+    background-color: #333333; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: FreeMono, monospace;
+    font-size: 16px;
+    margin-top: 1%;
+    margin-right: 15px;
+    margin-bottom: 1%;
+    
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+   letter-spacing: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button6 {
+    background-color: #333333;
+    color: white;
+    border: 2px solid #ffffff;
+
+}
+
+.button6:hover 
+{
+       background-color: #ffffff;
+    color: black;
+}
+ 
+
+
+ .button4 {
+  float: right;
+  width: auto;
+  height: 8%;
+    background-color: #333333; /* Green */
+    border: none;
+    color: white;
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: FreeMono, monospace;
+    font-size: 16px;
+    margin-top: 1%;
+    margin-right: 15px;
+    margin-bottom: 1%;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+   letter-spacing: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+/*.text1
+{
+    background-image: url("b1.png");
+}*/
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   border-bottom: 2px solid black;
+   background-color: #c7c7c7;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #adabab;
+}
+
+
+footer{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+}
+
+
+ * {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column3 {
+    float: left;
+    width: 60%; 
+    padding: 40px;
+    height: 550px;
+   /* height: auto;  Should be removed. Only for demonstration */
+
+}
+
+.column4 {
+    float: left;
+    height: 550px;
+    width: 40%; 
+    padding: 40px;
+    padding-bottom: 44px;
+    /*height: auto;  Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ .column6
+ {
+  height: auto;
+
+ }
+
+/*---------------------DESTINATION----------------*/
+.column0 {
+    float: left;
+    text-align: justify;
+    width: 50%;
+padding-right: 5%;
+padding-left: 5%; 
+    padding-top: 15%;
+    height: auto;
+}
+
+.column01 {
+
+    float: left;
+    text-align: justify;
+    width: 50%;
+    padding: 0px;
+    height: auto;
+}
+
+.column09 {
+    float: right;
+    text-align: justify;
+    width: 40%;
+    height: auto;
+}
+
+
+
+/* Clear floats after the columns */
+.row0:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+/* Float four columns side by side */
+.columnA {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowA {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.rowA:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .columnA{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  padding-top: 2%;
+  text-align: center;
+  background-color: #e8e7e2;
+}
+
+.adate
+{
+    height: auto; 
+    line-height: 25px;
+    background: white;
+    display: block;
+    font-size: 12px;
+    color: #969696;
+    padding: 4px 6px;
+}
+
+.aForm
+{
+   margin-right: 50%;
+}
+
+    .bs-example{
+      margin: 20px;
+    }
+
+#wrap div#totallPrice
+{
+    padding:10px;
+    font-weight:bold;
+    background-color:#ff0;
+}
+/*--------------------------CHECK BOX------------------------*/
+.collapsibleC {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsibleC:hover {
+    background-color: #555;
+}
+
+.contentC {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+.hide-replaced.ws-inputreplace {
+    display: none !important;
+}
+.input-picker .picker-list td > button.othermonth {
+    color: #888888;
+    background: #fff;
+}
+.ws-inline-picker.ws-size-2, .ws-inline-picker.ws-size-4 {
+    width: 49.6154em;
+}
+.ws-size-4 .ws-index-0, .ws-size-4 .ws-index-1 {
+    border-bottom: 0.07692em solid #eee;
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+}
+.picker-list.ws-index-2, .picker-list.ws-index-3 {
+    margin-top: 3.5em;
+}
+div.ws-invalid input {
+    border-color: #c88;
+}
+.ws-invalid label {
+    color: #933;
+}
+div.ws-success input {
+    border-color: #8c8;
+}
+
+form {
+    margin: 10px auto;
+    width: 50%;
+    min-width: 49.6154em;
+   /* border: 0px solid #000;*/
+    padding: 10px;
+}
+.form-row {
+    padding: 5px 10px;
+    margin: 5px 0;
+}
+label {
+    display: block;
+    margin: 3px 0;
+}
+.form-row input {
+    width: 220px;
+    padding: 3px 1px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+}
+.form-row input[type="checkbox"] {
+    width: 15px;
+}
+.date-display {
+    display: inline-block;
+    min-width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    min-height: 1em;
+}
+.show-inputbtns .input-buttons {
+    display: inline-block;
+}
+
+.error {color: #FF0000;}
+
+}
+
+.timesSquare
+{
+ 
+}
+
+.customerForm
+{
+  padding-left: 3%;
+  border-style: solid;
+   width: 50%;
+   height: auto;
+   margin-left: 7%;
+   
+}
+
+
+
+ .columnForm {
+    float: left;
+    text-align: justify;
+    width: 50%;
+  padding-right: 5%;
+  padding-left: 5%; 
+    padding-top: 5%;
+    padding-bottom: 11.5%;
+    height: auto;
+}
+
+
+    float: left;
+    text-align: justify;
+    width: 50%;
+    padding: 5%;
+    padding-top: 3%;
+    height: auto;
+}
+
+
+
+  .btn{
+  background:#a0a29d;
+  width:125px;
+  padding-top:5px;
+  padding-bottom:5px;
+  color:white;
+  border-radius:2px;
+  border: #ffffff 2px solid;
+  margin-top:20px; 
+  float:right;
+  margin-left:16px;
+  font-weight:800;
+  font-size:0.8em;
+}
+
+.btn:hover{
+  background:#656664; 
+}
+/*==========================================contact card===============*/
+.card11 {
+  box-shadow: 2 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/*========================GRID LAYOUT=================*/
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column11 {
+    float: left;
+    width: 25%; 
+    padding: 10px;
+     
+}
+
+/* Clear floats after the columns */
+.row11:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+ 
